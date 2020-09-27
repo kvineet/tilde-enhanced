@@ -128,7 +128,7 @@ class Form {
   
     _redirect(redirect) {
       if (this._newTab) window.open(redirect, '_blank');
-      else window.location.href = redirect;
+      else window.open(redirect, '_top');
     }
   
     _registerEvents() {
